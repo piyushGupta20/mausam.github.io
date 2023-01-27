@@ -84,4 +84,4 @@ search.addEventListener("keypress", (event)=> {
 
 
 
-getWeather("costa rica");
+getWeather("Ghaziabad");
