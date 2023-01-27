@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <div class="navbar">
+          <h1 class="logo"><ion-icon id="logo" name="snow"></ion-icon>मौसम</h1>
+          <div class="searchbar">
+            <input type="search" id="searc" class="search" placeholder="search..."/>
+            <button type="submit" id="submit" class="sicon"><ion-icon name="search"></ion-icon></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tagline">
+        <h1 >TAKE THE <span id="line">WEATHER</span> INFO OF YOUR CITY</h1>
+      </div>
+      <div class="container">
+        <div class="widget">
+          <div class="details">
+            <h3 id="cityName"></h3>
+            <div class="temperature"><span id="temp"></span><sup>°</sup></div>
+            <p id="status"><b></b></p><br>
+            <div class="wind"><ion-icon name="thermometer-outline"></ion-icon> <span id="max_temp"></span><sup>°</sup>/<span id="min_temp"></span><sup>°</sup>C</div>
+            <div class="wind">Feels Like: <span id="feels_like"></span><sup>°</sup></div>
+          </div>
+          <div class="extra">
+            <div class="wind"><ion-icon name="umbrella-outline"></ion-icon> PCT: <span id="cloud_pct"></span>%</div> 
+              <div class="wind"><ion-icon name="partly-sunny-outline"></ion-icon> Wind: <span id="wind_speed"></span> mph</div>
+              <div class="wind"><ion-icon name="water-outline"></ion-icon> Humidity: <span id="humidity"></span> g.m<sup>-3</sup></div>
+              <div class="wind"><ion-icon name="compass-outline"></ion-icon> Wind angle: <span id="wind_degrees"></span> deg</div>
+              <div class="wind"><ion-icon name="chevron-up-circle-outline"></ion-icon> Sunrise: <span id="sunrise"></span> </div>
+              <div class="wind"><ion-icon name="chevron-down-circle-outline"></ion-icon> Sunset: <span id="sunset"></span> </div>
+            </div>
+            <div class="backicon"><ion-icon class= "backiconid" id="backiconid" name="snow"></ion-icon></div>
+        </div>
+      </div>
+    </main>
+     <script src="index.js"></script>
+  </body>
+</html>
